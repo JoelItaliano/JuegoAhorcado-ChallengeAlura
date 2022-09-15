@@ -11,19 +11,36 @@ body {
     background-color: var(--gray);
 }
 
+main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     position: absolute;
     top: 5%;
     left: 5%;
 }
 
-.inicio {
-    width: 100vw;
-    height: 100vh;
+.inicio, .ingresoPalabra, .ahorcado {
+    width: clamp(375px, 95%, 940px );    
 
-    display: flex;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+}
+
+#pag-inicio{
+    display: none
+}
+#pag-ahorcado{
+    display: none;
 }
 
 .btn_incio {
@@ -54,3 +71,7 @@ body {
     padding: 24px;
 }
 
+
+.textarea--ingreso {
+    width: clamp(275px, 90%, 900px);
+}

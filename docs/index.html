@@ -4,30 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahorcado-Challenge Alura</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="icon" href="imagenes/icoAlura.jpg">
+    <title>Ahorcado-Challenge Alura</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <header class="logo">
+        <img src="imagenes/VectorLogoAlura.svg" alt="logo Alura">
+    </header>
     <main>
-        <section class="logo">
-            <img src="imagenes/VectorLogoAlura.svg" alt="logo Alura">
-        </section>
-        <section class="inicio">
+        
+        <section class="inicio" id="pag-inicio">
             <section class="btn_incio">
                 <button class="iniciar-juego">Iniciar Juego</button>
                 <button class="agregar-palabra">Agregar Palabra</button>
             </section>
         </section>
         
-        <section class="agregar">
+        <section class="ingresoPalabra">
+            <section class="ingresoPalabra__cont--textarea">
+                <textarea class="textarea--ingreso" placeholder="Ingrese una palabra">
 
+                </textarea>
+            </section>
+
+            <section class="ingresoPalabra__cont--piePag">
+                <section class="msj_Alert">
+                    <img src="imagenes/Vectoralert.svg" alt="img de alerta">
+                    <p>Máx. de 8 letras</p>
+                </section>
+                <section class="cont--button">
+                    <button class="btn--ingreso">Guardar y empezar</button>
+                    <button class="btn--cancelar">Cancelar</button>
+                </section>
+            </section>
         </section>
 
-        <section class="ahorcado">
+        <section class="ahorcado" id="pag-ahorcado">
 
         </section>
     </main>
+    <footer>
+        <p>Desarrollado por : <a href="https://www.linkedin.com/in/joel-italiano/" target="_blank">Joel Italiano</a></p>
+        <p>Contactame por mail <a href="mailto:joelitaliano93@gmail.com" target="_blank">pinchando aquí</a></p>
+    </footer>
 </body>
 </html>
